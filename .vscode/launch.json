@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run DemoProject",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/DemoProject/demoproject-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/comyashHTML5Module/index.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "cwd": "${workspaceFolder}/DemoProject/HTML5Module",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/DemoProject/HTML5Module\"}"
+      },
+      "envFile": "${workspaceFolder}/DemoProject/HTML5Module/.env3",
+      "preLaunchTask": "Build DemoProject"
+    }
+  ]
+}
